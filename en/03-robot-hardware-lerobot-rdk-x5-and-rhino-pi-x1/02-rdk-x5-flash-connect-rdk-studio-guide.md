@@ -6,17 +6,17 @@ Review machine-translated technical claims before relying on them.
 -->
 ## 1. Introduction to RDK Studio
 
-I wonder if everyone has encountered issues when using AI development boards—the official images consume a lot of space, making it difficult to save them, and hard to find when needed? The official example projects become increasingly difficult to locate over time. Additionally, preparing monitors, keyboards, and mice for the first network connection on the development board can be complicated... To address these various inconveniences in daily development, D-Robotics robot has innovatively introduced RDK Studio, an official developer software, marking a new era in intelligent robot development! This software significantly reduces the development barrier for robots, allowing even users with no prior experience to easily get started with RDK series boards! As an innovative application for robot development, it offers all the features you can imagine:
+I wonder if everyone has encountered issues when using AI development boards—the official image files take up a lot of space, making it difficult to save them, and it’s hard to find them when needed? The official example projects become increasingly difficult to locate over time. Additionally, preparing monitors, keyboards, and mice for the first connection to the network on the development board can be quite complicated... To address these various inconveniences in daily development, D-Robotics robot has innovatively introduced RDK Studio, an official developer software, marking a new era in intelligent robot development! This software significantly reduces the development barrier for robots, allowing even users with no prior experience to easily get started with RDK series boards! As an innovative application for robot development, it offers all the features you can imagine:
 
-- Manage all RDK board cards: RDK Studio fully supports all RDK board cards. It allows easy management of RDK X3, RDK X3, RDK X5, and RDK Ultra through a single software, and enables intuitive and rapid viewing of the current status of each board card.
+- Manage all RDK board cards: RDK Studio fully supports all RDK board cards. It allows easy management of RDK X3, RDK X3, RDK X5, and RDK Ultra through a single software, enabling intuitive and quick access to the current status of each board card.
 
-- One-click board image burning/upgrade: To address the issues of chaotic board image management, space occupation when not in use, and inability to find the board during use, RDK Studio allows for image burning and system upgrade of a single board with just one software.
+- One-click board image burning/upgrade: To address the issues of chaotic board image management, space occupation when not in use, and difficulty finding the board during use, RDK Studio allows for image burning and system upgrade of a single board with just one software.
 
-- One-click execution of sample program: RDK Studio includes the official D-Robotics robot NodeHub. Just with a few taps, you can run and showcase the official sample program, allowing you to experience the exceptional performance of RDK without complex steps.
+- One-click execution of sample program: RDK Studio comes with the official D-Robotics robot NodeHub. Just with a few taps, you can run and showcase the official sample program, allowing you to experience the exceptional performance of RDK without complex steps.
 
-- One-click startup of built-in applications on the board: RDK Studio allows one-click startup of built-in applications on the board, such as Vscode and Jupyter, enabling you to focus on algorithm development.
+- One-click startup of built-in applications on the board: RDK Studio allows you to start the built-in applications on the board, such as Vscode and Jupyter, with a single click, enabling you to focus on algorithm development.
 
-## II. Tutorial on Using RDK Studio
+## II. Usage Guide for RDK Studio
 
 ### 1. RDK Studio Installation
 
@@ -24,7 +24,7 @@ After covering so much, let's officially move on to the usage tutorial for RDK S
 
 ![image-20241231011946197](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231011947327-1719050444.png)
 
-This contains some introductions to RDK Studio and the download interface. By clicking on the prominent <font color="red"> "Download RDK Studio" </font>, you can navigate to the specific download page. Currently, RDK Studio only supports the Windows platform, but it is expected to release versions for Mac OS and Linux in the first quarter of 2025.
+This contains some introductions to RDK Studio and the download interface. By clicking on the prominent <font color="red"> "Download RDK Studio" </font>, you can navigate to our specific download page. Currently, RDK Studio only supports the Windows platform, but it is expected to release versions for Mac OS and Linux in the first quarter of 2025.
 
 ![image-20241231012058850](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231012100040-1328317018.png)
 
@@ -32,7 +32,7 @@ This contains some introductions to RDK Studio and the download interface. By cl
 
 
 
-Next, we can simply click on any packaging method to download. The difference between the User Installer and .zip versions is only that one allows direct download of the installation package, while the other downloads a compressed installation package. If you choose to download using the User Installer method, you may encounter the following warning; simply select "Keep it as is".
+Next, we can simply click on any packaging method to download. The difference between the User Installer and .zip versions is only that one allows direct download of the installation package, while the other downloads the compressed installation package. If you choose to download using the User Installer method, you may encounter the following warning; simply select "Keep it as is".
 
 
 
@@ -42,25 +42,25 @@ Then, double-click the downloaded exe file to automatically install and launch R
 
 ![image-20241231014221474](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231014223330-200840883.png)
 
-### 2. Use of RDK Studio
+### 2. Usage of RDK Studio
 
-After opening the software, we can see the interface of RDK Studio as follows. Next, we will explain how to use this software under different scenarios.
+After opening the software, we can see the interface of RDK Studio as follows. Next, we will introduce how to use this software in different scenarios.
 
 ![image-20241231020605367](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231041505630-55216625.png)
 
-### 2.1 New Board Burn-in
+### 2.1 New board programming
 
-First, we obtain a new RDK X5 board and open the software. By clicking on the burn-in section on the left, we can select and connect to the device we are about to burn in. We can also click on <font color="red"> behind the X5 to use the TypeC </font> button to learn how to use TypeC. Our RDK X5 board can only perform system burning when in TypeC mode.
+First, we obtain a new RDK X5 board and open the software. By clicking on the burn-in section on the left, we can select and connect the device we are about to burn in. We can also click on <font color="red"> behind X5 and use the TypeC </font> button to learn how to use TypeC. The RDK X5 board can only perform system burning when in TypeC mode.
 
 ![image-20241231024350810](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231024352793-2099235498.png)
 
 ![image-20241231024839013](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231024840606-882520385.png)
 
-According to the official instructions, there are two TypeC ports on our X5. The port on the right is the power port, and the one on the left is the Thunderbolt USB2 port. First, we insert the SD card into the RDK X5. Then, use a Type-C data cable to connect the computer to the RDK X5. After pressing the switch button, power on the RDK X5. Holding the switch button for 3–5 seconds will enter the Thunderbolt mode. Once in Thunderbolt mode, the system will automatically recognize the X5 as a USB drive. Next, we return to the burning interface of RDK Studio and click "Next" to enter the system download and configuration selection interface. In this interface, we can choose the system version and download path we want to download.
+According to the official instructions, there are two TypeC ports on our X5. The port on the right is the power port, and the one on the left is the Thunderbolt USB2 port. First, we insert the SD card into the RDK X5. Then, use a Type-C data cable to connect the computer to the RDK X5. After pressing the switch button, power on the RDK X5. Holding the switch button for 3–5 seconds will enter the Thunderbolt mode. Once in Thunderbolt mode, the system will automatically recognize the X5 as a USB drive. Next, we return to the burning interface of RDK Studio and click "Next" to enter the system download and configuration interface. In this interface, we can select the system version and download path we want to download.
 
 ![image-20241231025448211](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231025449865-2073792881.png)
 
-Next, we select the latest image to download. Click Next to start selecting the path where we want to burn the firmware. We choose "/dev/sdb". If no device is displayed here after clicking Next, you can click the refresh button next to the yellow arrow to recheck. If nothing appears after refreshing, it means the board has not entered the flash link mode, and we need to return to the beginning and hold the button to power on again.
+Next, we select the latest image to download. Click Next to start selecting the path where we want to burn the firmware. We choose “/dev/sdb”. If no device is displayed here after clicking Next, you can click the refresh button next to the yellow icon to recheck. If nothing appears after refreshing, it means the board has not entered the flashlink mode, and we need to return to the beginning and hold the button to power on again.
 
 ![image-20241231025521254](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231025522574-1971904316.png)
 
@@ -74,7 +74,7 @@ After a short wait, the system can be installed successfully!!!
 
 ### 2.2 Adding Existing Boards
 
-After completing the previous step of system burning, or once we have a board with a burned system, we can add our device to the device management page after powering it back on. There are three ways to add devices in RDK: network cable connection, flash connection, and connection via known IP address. Here, we can choose the appropriate connection method according to our needs.
+After completing the previous step of system flashing, or once we have a board with the system flashed, we can add our device to the Device Management page after powering it back on. There are three ways to add devices in RDK: network cable connection, flash connection, and connection via known IP address. Here, we can choose the appropriate connection method according to our needs.
 
 ![image-20241231032759328](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231032801047-45604871.png)
 
@@ -86,11 +86,11 @@ Then, when we click Next, it will ask us to select our login device. We can choo
 
 ![image-20241231033225778](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231033227541-1618372285.png)
 
-Next, we enter the interface for connecting to the wireless network. We can connect by entering the password of the wireless network in the current environment. Of course, we can also skip this step.
+Next, we enter the interface for connecting to the wireless network. We can enter the password to connect to the wireless network in the current environment. Of course, we can also skip this step.
 
 ![image-20241231033630688](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231041451498-211015426.png)
 
-Finally, we add the device name description and contact information according to our needs to add this device.
+Finally, we add the device name description and contact information according to our needs, and then we can add this device.
 
 ![image-20241231033744625](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231041448306-844098832.png)
 
@@ -104,18 +104,18 @@ After adding the device, we can see the device we added in the device management
 
 ![image-20241231034515974](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231034517858-5525647.png)
 
-By clicking Add Application, we can see the list of applications supported by the current board. You can choose to download or use them according to your needs.
+By clicking Add Application, you can see the list of applications supported by the current board. You can choose to download or use them according to your needs.
 
 ![image-20241231034605816](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231041433824-151742712.png)
 
 ### 2.4 Example Application with One-Click Start
 
-After adding our device, we can open the sample program in the left sidebar. Once opened, we can select the device name we want to run and perform the corresponding manipulation from the dropdown menu. Clicking "Download Sample" or the corresponding application allows us to immediately experience the preset items!
+After adding our device, we can open the sample program in the left sidebar. Once opened, we can select the device name we want to run from the dropdown menu and perform the corresponding manipulation. Clicking "Download Sample" or the corresponding application allows us to immediately experience the pre-set items!
 
 ![image-20241231034702723](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231041431744-1807077157.png)
 
 ### 3. Uninstalling RDK Studio
 
-When we want to uninstall RDK Studio because we no longer need it, we can open System Settings, select Apps -> Installed Apps, and enter "RDK Studio" in the search box to find the app. Then, click the three "···" on the right side and choose Uninstall.
+When we want to uninstall RDK Studio because we no longer need it, we can open System Settings, select Apps -> Installed Apps, enter "RDK Studio" in the search box to find the app, and then click the three "···" on the right side to choose Uninstall.
 
 ![image-20241231041320067](https://img2023.cnblogs.com/blog/3505969/202412/3505969-20241231041425887-1178161419.png)

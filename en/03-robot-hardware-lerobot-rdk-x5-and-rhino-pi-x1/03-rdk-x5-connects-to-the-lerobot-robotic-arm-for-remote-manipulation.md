@@ -4,7 +4,7 @@ Source SHA-256: ac3d8ba7ff67c98de342a18f420c5a7ccc1074fade3baa5e44eda2d574989095
 Model: tencent/Hy-MT2-1.8B-GGUF:Q4_K_M
 Review machine-translated technical claims before relying on them.
 -->
-Prepare a power supply of 5V/5A for burning the image.
+Prepare a power supply of 5V/5A to burn the image.
 
 https://developer.d-robotics.cc/rdk_doc/Quick_start/hardware_introduction/rdk_x5
 
@@ -47,11 +47,11 @@ ls lerobot/common/robot_devices/robots/configs.py检索如下内容class So101Ro
 
 ![image-20260220122500753](../../03-机器人硬件、lerobot及地瓜RDK-X5与犀牛派X1开发板控制教程/assets/image-20260220122500753.png)
 
-Bought the pre-installed version, **no** need to set the motor ID
+Bought the pre-installed version, **no** need to set the motor ID.
 
 ![image-20260220122514519](../../03-机器人硬件、lerobot及地瓜RDK-X5与犀牛派X1开发板控制教程/assets/image-20260220122514519.png)
 
-Then, configure the alignment data of the main arm and slave arm.
+Then, configure the alignment data for the main arm and secondary arm.
 
 ```Bash
 python lerobot/scripts/control_robot.py \  --robot.type=so101 \  --robot.cameras='{}' \  --control.type=calibrate \  --control.arms='["main_follower"]'
@@ -65,7 +65,7 @@ Run this command. First calibrate the arm from, then calibrate the main arm.
 
 ![image-20260220122544028](../../03-机器人硬件、lerobot及地瓜RDK-X5与犀牛派X1开发板控制教程/assets/image-20260220122544028.png)
 
-In this way, we can successfully complete the remote manipulation!
+Thus, we can successfully carry out remote manipulation!
 
 ```Bash
 python lerobot/scripts/control_robot.py \  --robot.type=so101 \  --robot.cameras='{}' \  --control.type=teleoperate
